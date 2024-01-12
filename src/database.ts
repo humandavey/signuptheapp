@@ -11,7 +11,7 @@ import {
   onSnapshot,
   increment,
 } from "firebase/firestore";
-
 import * as firebaseConfig from './config.json';
+
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
