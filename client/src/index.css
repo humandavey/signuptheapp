@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    padding: 1rem;
+    background-color: rgb(33,42,44);
+    color: white;
+}
+
+.login-btn {
+    height: 2.5rem;
+    margin: auto 0;
+}
+
+body {
+    background-color: rgb(89,89,89);
+}
+
+.signup-table {
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.logo-icon:hover {
+    cursor: pointer;
+}
+
+.title-text:hover {
+    cursor: pointer;
+}
