@@ -16,7 +16,12 @@ body {
     background-color: rgb(89,89,89);
 }
 
-.signup-table {
+.signup-table-home{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+.signup-table-viewer{
     width: 80%;
     margin: 1rem auto;
 }

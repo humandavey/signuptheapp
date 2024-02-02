@@ -10,7 +10,7 @@ export default () => {
     <>
       <Header />
       
-      <div className="signup-table">
+      <div className="signup-table-home">
         <h2 style={{color: "white"}}>Your sign ups...</h2>
         <Table
           bordered
