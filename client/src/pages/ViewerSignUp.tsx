@@ -10,7 +10,7 @@ export default () => {
     <>
       <Header />
       
-      <div className="signup-table-viewer" style={{backgroundColor: #b7b7b7ff}}>
+      <div className="slots-table-viewer" style={{backgroundColor: #b7b7b7ff}}>
         <h2 style={{color: "white", position: "center-align"}}>Writing Center Sign Up</h2>
         <Table
           bordered
