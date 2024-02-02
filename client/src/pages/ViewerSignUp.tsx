@@ -10,8 +10,8 @@ export default () => {
     <>
       <Header />
       
-      <div className="slots-table-viewer" style={{backgroundColor: #b7b7b7ff}}>
-        <h2 style={{color: "white", position: "center-align"}}>Writing Center Sign Up</h2>
+      <div className="slots-table-viewer">
+        <h2 style={{color: "white"}}>Writing Center Sign Up</h2>
         <Table
           bordered
           hover
@@ -23,7 +23,7 @@ export default () => {
               <td>Date</td>
               <td>Time</td>
               <td>Expiration</td>
-            
+              <td>Options</td>
             </tr>
           </thead>
           <tbody>
@@ -34,7 +34,6 @@ export default () => {
               <td>2/6/2024</td>
               <td>
                 <Button style={{margin: "0.5rem auto"}}>Sign Up</Button>
-      
               </td>
             </tr>
           </tbody>
