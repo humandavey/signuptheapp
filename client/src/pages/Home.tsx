@@ -1,5 +1,3 @@
-import { useEffect, useState } from "react";
-import { getNum } from "../firebase";
 import Header from "../components/Header";
 import { Button, Table } from "react-bootstrap";
 

@@ -5,7 +5,6 @@ import { useNavigate } from "react-router-dom";
 export default () => {
     const navigate = useNavigate();
 
-
     return (
         <>
         <div className="header">
@@ -14,7 +13,7 @@ export default () => {
                 <h1 className="title-text" onClick={() => navigate("/")}>Sign Up Tech</h1>
             </div>
             <div style={{display: "flex"}}>
-                <Button className="login-btn">Login</Button>
+                <Button className="login-btn" onClick={() => navigate("/login")}>Login</Button>
             </div>
         </div>
         </>
