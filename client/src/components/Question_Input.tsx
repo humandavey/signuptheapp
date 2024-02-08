@@ -12,10 +12,7 @@ export default () => {
                         placeholder="Enter your answer here"></Form.Control>
                 </InputGroup>
             
-            </div>
-            
-        
-
+            </div>          
         </>
     );
 };
