@@ -1,7 +1,17 @@
 import Header from "../components/Header";
 import { InputGroup, Button, Form } from "react-bootstrap";
 
+const Login = (props) => {
+  const [email, setEmail] = useState('')
+  const [password, setPassword] = useState('')
+  const [emailError, setEmailError] = useState('')
+  const [passwordError, setPasswordError] = useState('')
 
+    const navigate = useNavigate()
+    const onButtonClick = () => {
+
+    }
+  };
 export default () => {
 
   return (
@@ -14,13 +24,20 @@ export default () => {
             <InputGroup style={{marginTop: ".5em"}}>
                 <Form.Control 
                     placeholder="Email Address..."
+                    onChange={(ev) => setEmail(ev.target.value)}
+
                 />
+
             </InputGroup>
             <InputGroup style={{marginTop: ".5em"}}>
                 <Form.Control 
                     placeholder="Password..."
+                    onChange={(ev) => setPassword(ev.target.value)}
                 />
             </InputGroup>
+
+            <label className="errorLabel">{passwordError}</label>
+
             <InputGroup style={{marginTop: ".5em"}}>
                 <Button style={{width: "100%"}}>Login</Button>
             </InputGroup>
@@ -30,3 +47,4 @@ export default () => {
     </>
   );
 };
+
