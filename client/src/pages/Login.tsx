@@ -49,7 +49,7 @@ const Login = (props) => {
                     onChange={(ev) => setEmail(ev.target.value)}
 
                 />
-
+              <label className="emailerrorLabel">{emailError}</label>
             </InputGroup>
             <InputGroup style={{marginTop: ".5em"}}>
                 <Form.Control 
@@ -58,7 +58,7 @@ const Login = (props) => {
                 />
             </InputGroup>
 
-            <label className="errorLabel">{passwordError}</label>
+            <label className="passworderrorLabel">{passwordError}</label>
 
             <InputGroup style={{marginTop: ".5em"}}>
                 <Button style={{width: "100%"}} onClick={() => onButtonClick()}>Login</Button>
