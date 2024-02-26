@@ -6,7 +6,7 @@ const Login = (props) => {
   const [password, setPassword] = useState('')
   const [emailError, setEmailError] = useState('')
   const [passwordError, setPasswordError] = useState('')
-
+  
     const navigate = useNavigate()
     const onButtonClick = () => {
       if ('' === email) {
@@ -16,6 +16,11 @@ const Login = (props) => {
     
       if ("!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/".test(email)) {
         setEmailError('Please enter a valid email')
+        return
+      }
+
+      if("^[0-9]".test(password)){
+        setPasswordError('Please enter a valid password')
         return
       }
     
