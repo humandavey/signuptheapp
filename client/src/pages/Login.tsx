@@ -20,7 +20,7 @@ const Login = (props) => {
       }
 
       if("^[0-9]".test(password)){
-        setPasswordError('Please enter a valid password')
+        setPasswordError('Please include a number in your password')
         return
       }
     
