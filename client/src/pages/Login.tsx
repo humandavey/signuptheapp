@@ -14,7 +14,7 @@ const Login = (props) => {
         return
       }
     
-      if (!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/.test(email)) {
+      if ("!/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/".test(email)) {
         setEmailError('Please enter a valid email')
         return
       }
@@ -30,8 +30,6 @@ const Login = (props) => {
       }
     
     }
-  };
-export default () => {
 
   return (
     <>
@@ -58,7 +56,7 @@ export default () => {
             <label className="errorLabel">{passwordError}</label>
 
             <InputGroup style={{marginTop: ".5em"}}>
-                <Button style={{width: "100%"}}>Login</Button>
+                <Button style={{width: "100%"}} onClick={() => onButtonClick()}>Login</Button>
             </InputGroup>
         </div>
         <a href="" style={{color: "white"}}>No account? Click to sign up!</a>
